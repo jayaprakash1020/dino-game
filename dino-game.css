@@ -1,0 +1,60 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+#game-container {
+  position: relative;
+}
+
+canvas {
+  border: 2px solid #bbb;
+  background: #fff;
+  display: block;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.88);
+  gap: 10px;
+}
+
+#overlay h2 {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#overlay p {
+  font-size: 0.85rem;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+#score-display {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #888;
+}
