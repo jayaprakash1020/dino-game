@@ -40,7 +40,7 @@ const dino = {
   get bottom() { return this.y + (this.ducking ? this.h * 0.5 : this.h); },
 
   jump() {
-    if (this.bottom >= GROUND + 1) {
+    if (this.bottom >= GROUND - 1) {
       this.vy = this.jumpForce;
     }
   },
